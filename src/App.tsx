@@ -2,6 +2,7 @@ import { HeroSection } from './components/HeroSection';
 import { MarqueeSection } from './components/MarqueeSection';
 import { TargetAudienceSection } from './components/TargetAudienceSection';
 import { ComparisonSection } from './components/ComparisonSection';
+import { SecondaryMarqueeSection } from './components/SecondaryMarqueeSection';
 import { ContentSection } from './components/ContentSection';
 import { BonusesSection } from './components/BonusesSection';
 import { PricingSection } from './components/PricingSection';
@@ -25,6 +26,9 @@ export default function App() {
 
       {/* 4. Para quem é este material? */}
       <ComparisonSection />
+
+      {/* 4.1 Carrossel Dedicado de Treinos Ilustrados (Ordem Aleatória) */}
+      <SecondaryMarqueeSection />
 
       {/* 5. Tudo isso está incluso no seu kit */}
       <ContentSection />

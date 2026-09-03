@@ -48,18 +48,30 @@ export const CHECKOUT_LINKS = {
   completePlan: 'https://pay.kiwify.com.br/i32sxoH',
 };
 
-// Marquee Carousel Images (em ordem aleatória)
+// Marquee Carousel Images (em ordem aleatória com as novas imagens)
 export const MARQUEE_ITEMS: MarqueeItem[] = [
-  { image: 'https://i.ibb.co/N6jHhQkt/04.webp', alt: 'Treino ilustrado 4' },
-  { image: 'https://i.ibb.co/h1JNdQ3r/09.webp', alt: 'Treino ilustrado 9' },
-  { image: 'https://i.ibb.co/C3qdNJQS/02.webp', alt: 'Treino ilustrado 2' },
-  { image: 'https://i.ibb.co/yFq5cmhy/07.webp', alt: 'Treino ilustrado 7' },
-  { image: 'https://i.ibb.co/hJ1sfFCQ/01.webp', alt: 'Treino ilustrado 1' },
-  { image: 'https://i.ibb.co/prygk37Q/10.webp', alt: 'Treino ilustrado 10' },
-  { image: 'https://i.ibb.co/23PXyycp/05.webp', alt: 'Treino ilustrado 5' },
-  { image: 'https://i.ibb.co/HLwjX7DW/08.webp', alt: 'Treino ilustrado 8' },
-  { image: 'https://i.ibb.co/XkMYV4YK/03.webp', alt: 'Treino ilustrado 3' },
-  { image: 'https://i.ibb.co/3YPPRP03/06.webp', alt: 'Treino ilustrado 6' },
+  { image: 'https://i.ibb.co/1YrWKJ0L/27OK.webp', alt: 'Treino ilustrado 27' },
+  { image: 'https://i.ibb.co/D3hBg05/16OK.webp', alt: 'Treino ilustrado 16' },
+  { image: 'https://i.ibb.co/LXs5csfS/21OK.webp', alt: 'Treino ilustrado 21' },
+  { image: 'https://i.ibb.co/xtMyKXTJ/30OK.webp', alt: 'Treino ilustrado 30' },
+  { image: 'https://i.ibb.co/N66z8f4s/15OK.webp', alt: 'Treino ilustrado 15' },
+  { image: 'https://i.ibb.co/FbS642Ty/28OK.webp', alt: 'Treino ilustrado 28' },
+  { image: 'https://i.ibb.co/S4yDL2tt/18OK.webp', alt: 'Treino ilustrado 18' },
+  { image: 'https://i.ibb.co/Td1tFf3/23OK.webp', alt: 'Treino ilustrado 23' },
+  { image: 'https://i.ibb.co/JRK3gC7V/17OK.webp', alt: 'Treino ilustrado 17' },
+];
+
+// Segundo Carrossel (Abaixo de 'Para quem é este material?' - Ordem Aleatória)
+export const SECONDARY_MARQUEE_ITEMS: MarqueeItem[] = [
+  { image: 'https://i.ibb.co/FbS642Ty/28OK.webp', alt: 'Treino ilustrado 28' },
+  { image: 'https://i.ibb.co/S4yDL2tt/18OK.webp', alt: 'Treino ilustrado 18' },
+  { image: 'https://i.ibb.co/Td1tFf3/23OK.webp', alt: 'Treino ilustrado 23' },
+  { image: 'https://i.ibb.co/N66z8f4s/15OK.webp', alt: 'Treino ilustrado 15' },
+  { image: 'https://i.ibb.co/1YrWKJ0L/27OK.webp', alt: 'Treino ilustrado 27' },
+  { image: 'https://i.ibb.co/JRK3gC7V/17OK.webp', alt: 'Treino ilustrado 17' },
+  { image: 'https://i.ibb.co/LXs5csfS/21OK.webp', alt: 'Treino ilustrado 21' },
+  { image: 'https://i.ibb.co/D3hBg05/16OK.webp', alt: 'Treino ilustrado 16' },
+  { image: 'https://i.ibb.co/xtMyKXTJ/30OK.webp', alt: 'Treino ilustrado 30' },
 ];
 
 // Benefits Section (P1)
