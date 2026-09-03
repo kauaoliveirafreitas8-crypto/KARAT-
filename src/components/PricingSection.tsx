@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Check, Star, Flame } from 'lucide-react';
+import { Clock, Check, Gift } from 'lucide-react';
 import { ASSETS, CHECKOUT_LINKS } from '../data/salesPageData';
 
 export const PricingSection: React.FC = () => {
@@ -7,32 +7,26 @@ export const PricingSection: React.FC = () => {
 
   const basicPlanFeatures = [
     '+250 TREINOS ILUSTRADOS',
-    'MATERIAL 100% DIGITAL',
     'MOVIMENTOS PASSO A PASSO',
-    'BASES E POSTURAS FUNDAMENTAIS',
-    'GOLPES E ATAQUES',
-    'DEFESAS E CONTRA-ATAQUES',
-    'CHUTES E CONTROLE CORPORAL',
-    'DESLOCAMENTOS E EQUILÍBRIO',
-    'COMBINAÇÕES E SEQUÊNCIAS PRÁTICAS',
     'ACESSO IMEDIATO',
     'ACESSO VITALÍCIO',
-    'PRONTO PARA CONSULTAR OU IMPRIMIR',
   ];
 
   const completePlanFeatures = [
-    '+250 Treinos Ilustrados Passo a Passo de Karatê',
-    'BÔNUS 1: Guia Visual de Bases e Posturas do Karatê',
-    'BÔNUS 2: Sequências de Kihon para Praticar os Fundamentos',
-    'BÔNUS 3: Mobilidade e Preparação para o Treino',
-    'BÔNUS 4: Checklist de Correção dos Fundamentos',
-    'Todos os materiais em formato digital',
-    'Acesso imediato',
-  ];
-
-  const completePlanGoldFeatures = [
-    'Acesso vitalício',
-    'Atualizações gratuitas',
+    { text: '+250 TREINOS ILUSTRADOS PASSO A PASSO DE KARATÊ', isBonus: false },
+    { text: 'MOVIMENTOS PASSO A PASSO', isBonus: false },
+    { text: 'ACESSO IMEDIATO', isBonus: false },
+    { text: 'ACESSO VITALÍCIO', isBonus: false },
+    { text: 'BASES E POSTURAS FUNDAMENTAIS', isBonus: false },
+    { text: 'GOLPES E ATAQUES', isBonus: false },
+    { text: 'DEFESAS E CONTRA-ATAQUES', isBonus: false },
+    { text: 'CHUTES E CONTROLE CORPORAL', isBonus: false },
+    { text: 'DESLOCAMENTOS E EQUILÍBRIO', isBonus: false },
+    { text: 'COMBINAÇÕES E SEQUÊNCIAS PRÁTICAS', isBonus: false },
+    { text: 'BÔNUS 1: GUIA VISUAL DE BASES E POSTURAS DO KARATÊ', isBonus: true },
+    { text: 'BÔNUS 2: SEQUÊNCIAS DE KIHON PARA PRATICAR OS FUNDAMENTOS', isBonus: true },
+    { text: 'BÔNUS 3: MOBILIDADE E PREPARAÇÃO PARA O TREINO', isBonus: true },
+    { text: 'BÔNUS 4: CHECKLIST DE CORREÇÃO DOS FUNDAMENTOS', isBonus: true },
   ];
 
   return (
@@ -55,7 +49,7 @@ export const PricingSection: React.FC = () => {
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Plano Básico */}
-          <div className="rounded-3xl bg-white border border-slate-200 p-6 md:p-10 shadow-sm text-center hover:border-slate-300 transition-colors">
+          <div className="rounded-3xl bg-white border border-slate-200 p-6 md:p-10 shadow-md text-center hover:border-slate-300 transition-all">
             <h3 className="font-black text-2xl md:text-3xl text-[#0A192F]">
               PLANO BÁSICO
             </h3>
@@ -70,7 +64,7 @@ export const PricingSection: React.FC = () => {
               />
             </div>
 
-            <ul className="mt-6 space-y-2 text-left max-w-xs mx-auto">
+            <ul className="mt-6 space-y-2.5 text-left max-w-xs mx-auto">
               {basicPlanFeatures.map((feat, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-slate-700">
                   <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -79,18 +73,18 @@ export const PricingSection: React.FC = () => {
               ))}
             </ul>
 
-            <p className="mt-6 text-rose-500 line-through text-lg">
+            <p className="mt-6 text-rose-500 line-through text-base">
               de R$54,90 por:
             </p>
             <div className="mt-1 leading-none">
-              <span className="text-7xl md:text-[5rem] font-black text-[#0066CC] tracking-tight">
+              <span className="text-6xl md:text-7xl font-black text-[#0066CC] tracking-tight">
                 R$17,90
               </span>
             </div>
-            <p className="mt-3 font-bold text-[#0A192F] text-lg">
+            <p className="mt-3 font-bold text-[#0A192F] text-base sm:text-lg">
               ou 3x de R$6,39 no cartão
             </p>
-            <p className="mt-2 text-[#0A192F] text-base sm:text-lg flex items-center justify-center gap-2">
+            <p className="mt-2 text-[#0A192F] text-sm sm:text-base flex items-center justify-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#16A34A]" />
               <span>
                 Você economiza <strong>R$37,00</strong>
@@ -102,15 +96,15 @@ export const PricingSection: React.FC = () => {
               href={CHECKOUT_LINKS.basicPlan}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wide shadow-[0_6px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_#004F9F] hover:bg-[#0055B3] transition-all cursor-pointer animate-cta-pulse"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wide shadow-[0_6px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_#004F9F] hover:bg-[#0055B3] transition-all cursor-pointer"
             >
-              Quero adquirir o meu →
+              QUERO O PLANO BÁSICO →
             </a>
           </div>
 
-          {/* Plano Completo (Mais Vendido) */}
-          <div className="relative rounded-3xl bg-white border-[3px] border-[#0066CC] p-6 md:p-10 shadow-xl text-center">
-            <div className="-mx-6 md:-mx-10 -mt-6 md:-mt-10 rounded-t-[20px] bg-[#0066CC] text-white text-center py-3.5 px-4 font-black uppercase tracking-wide text-sm md:text-base">
+          {/* Plano Completo (Mais Vendido - Super Destacado) */}
+          <div className="relative rounded-3xl bg-white border-[3px] border-[#0066CC] p-6 md:p-10 shadow-2xl text-center lg:scale-[1.02] ring-4 ring-[#0066CC]/10">
+            <div className="-mx-6 md:-mx-10 -mt-6 md:-mt-10 rounded-t-[20px] bg-[#0066CC] text-white text-center py-3.5 px-4 font-black uppercase tracking-wide text-sm md:text-base shadow-md">
               ⭐ PLANO COMPLETO — MAIS VENDIDO
             </div>
 
@@ -132,14 +126,14 @@ export const PricingSection: React.FC = () => {
             <ul className="mt-6 space-y-2 text-left max-w-sm mx-auto">
               {completePlanFeatures.map((feat, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-slate-700">
-                  <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium">{feat}</span>
-                </li>
-              ))}
-              {completePlanGoldFeatures.map((feat, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-slate-800 font-semibold">
-                  <Star className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5 fill-amber-500" />
-                  <span className="text-sm">{feat}</span>
+                  {feat.isBonus ? (
+                    <Gift className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  ) : (
+                    <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  )}
+                  <span className={`text-sm ${feat.isBonus ? 'font-bold text-slate-900' : 'font-medium'}`}>
+                    {feat.text}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -169,19 +163,8 @@ export const PricingSection: React.FC = () => {
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wide shadow-[0_6px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_#004F9F] hover:bg-[#0055B3] transition-all cursor-pointer animate-cta-pulse"
             >
-              Quero adquirir o meu →
+              QUERO O PLANO COMPLETO🥋
             </a>
-
-            <div className="mt-6 rounded-xl bg-sky-50 border border-sky-200 px-4 py-3 text-sky-900 text-sm flex items-center justify-center gap-2 text-center">
-              <Flame className="w-4 h-4 text-[#0066CC] flex-shrink-0" />
-              <span>
-                <strong>APROVEITE AGORA:</strong> Este conjunto completo não permanecerá disponível por esse preço para sempre.
-              </span>
-            </div>
-
-            <p className="mt-2 text-slate-500 text-sm flex items-center justify-center gap-2">
-              🛡️ 7 dias de garantia incondicional
-            </p>
           </div>
         </div>
       </div>

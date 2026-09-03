@@ -14,9 +14,6 @@ export const MarqueeSection: React.FC = () => {
             TREINOS ILUSTRADOS
           </span>
         </h2>
-        <p className="mt-5 text-[#475569] text-base sm:text-lg max-w-4xl mx-auto">
-          Tenha acesso a mais de 250 treinos ilustrados de Karatê, organizados com posições, movimentos, sequências, orientações importantes e explicações visuais passo a passo para facilitar a prática e a revisão dos principais fundamentos.
-        </p>
       </div>
 
       <div className="relative mt-14 w-full overflow-hidden">
