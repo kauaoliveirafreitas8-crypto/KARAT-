@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .hero-bg {
+    background-color: #081426;
+  }
+  
+  .hero-underline,
+  .accent-underline,
+  .accent-underline-neon {
+    padding-inline: 0.15em;
+    display: inline;
+    position: relative;
+    color: #ffffff;
+    background-color: #0066CC;
+    border-radius: 0.25rem;
+  }
+
+  .accent-underline-white {
+    padding-inline: 0.15em;
+    display: inline;
+    position: relative;
+    color: #38bdf8;
+    background-color: #0d223d;
+    border-radius: 0.25rem;
+  }
+
+  .glass-mock {
+    background: #0d223d;
+    border: 1px solid #1e3a5f;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .glow-blob {
+    filter: blur(100px);
+    pointer-events: none;
+    background: rgba(0, 145, 255, 0.18);
+    border-radius: 9999px;
+    position: absolute;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cta-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-cta-pulse {
+  animation: cta-pulse 2s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

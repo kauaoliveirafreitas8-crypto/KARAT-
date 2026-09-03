@@ -1,0 +1,8 @@
+{
+  "name": "+250 Treinos Ilustrados de Karatê",
+  "description": "Desenvolva os principais fundamentos do Karatê através de movimentos ilustrados, sequências visuais passo a passo e treinos organizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
