@@ -34,11 +34,11 @@ export const ASSETS = {
   basicPlanMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
   completePlanMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
   comparisonImage: 'https://i.ibb.co/YBBMHSSs/IMG1.webp',
-  bonus1: 'https://i.ibb.co/YTbSxq41/BONUS-01-PP.webp',
-  bonus2: 'https://i.ibb.co/nsZ1tqFr/BONUS-02-OP.webp',
-  bonus3: 'https://i.ibb.co/8LnRCrTM/BONUS-03-JO.webp',
-  bonus4: 'https://i.ibb.co/gMq6HV5s/BONUS-04-MOCKUP.webp',
-  guaranteeBadge: 'https://i.ibb.co/N2GSfh9p/GARANTIA.webp',
+  bonus1: '/assets/bonus-1-opt.webp',
+  bonus2: '/assets/bonus-2-opt.webp',
+  bonus3: '/assets/bonus-3-opt.webp',
+  bonus4: '/assets/bonus-4-opt.webp',
+  guaranteeBadge: '/assets/garantia-opt.webp',
   paymentIcons: '/assets/payment-icons-XUGfrbXl.png',
 };
 
