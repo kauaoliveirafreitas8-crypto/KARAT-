@@ -85,16 +85,23 @@ export const HeroSection: React.FC = () => {
               </div>
 
               {/* Delivery info box */}
-              <div className="mt-6 lg:mt-10 inline-flex max-w-xl items-center gap-3 rounded-xl bg-[#F0F7FF] border border-[#BFDBFE] px-5 py-4">
-                <span className="text-[#0A192F] font-semibold text-[15px] sm:text-base leading-relaxed inline-flex flex-wrap items-center gap-x-1.5 gap-y-1">
-                  Receba tudo imediatamente no seu
-                  <img
-                    src={ASSETS.gmailIcon}
-                    alt="E-mail"
-                    className="inline-block w-5 h-5 align-middle object-contain"
-                  />
-                  e-mail, e acesse seu material pelo 📱 Celular, 📲 Tablet ou 🖥️ Desktop
-                </span>
+              <div className="mt-6 lg:mt-8 w-full max-w-lg lg:max-w-xl rounded-xl bg-[#F0F7FF] border border-[#BFDBFE] px-4 py-3 sm:px-5 sm:py-3.5 shadow-sm text-center lg:text-left">
+                <p className="text-[#0A192F] font-semibold text-[13.5px] sm:text-[15px] leading-relaxed m-0 text-center lg:text-left">
+                  Receba tudo imediatamente no seu{' '}
+                  <span className="inline-flex items-center gap-1 font-bold text-[#0066CC] align-middle whitespace-nowrap">
+                    <img
+                      src={ASSETS.gmailIcon}
+                      alt=""
+                      aria-hidden="true"
+                      className="inline-block w-4 h-4 sm:w-4.5 sm:h-4.5 object-contain"
+                    />
+                    e-mail
+                  </span>
+                  , e acesse seu material pelo{' '}
+                  <span className="whitespace-nowrap">📱 Celular</span>,{' '}
+                  <span className="whitespace-nowrap">📲 Tablet</span> ou{' '}
+                  <span className="whitespace-nowrap">🖥️ Desktop</span>
+                </p>
               </div>
             </div>
 
