@@ -7,7 +7,7 @@ export const FooterSection: React.FC = () => {
     <footer id="footer-section" className="bg-[#06101E] py-8 px-6 border-t border-slate-800">
       <div className="flex flex-col items-center justify-center space-y-4 max-w-4xl mx-auto">
         <p className="text-center text-slate-300 text-sm font-medium">
-          © {currentYear} +250 Treinos Ilustrados de Karatê. Todos os direitos reservados.
+          © {currentYear} +150 Treinos Ilustrados de Karatê. Todos os direitos reservados.
         </p>
         <p className="text-center text-slate-400 text-xs leading-relaxed max-w-3xl whitespace-pre-line">
           Este material é um recurso educacional complementar, desenvolvido para estudo, consulta e revisão dos fundamentos do Karatê.

@@ -28,7 +28,7 @@ export const PainPointsSection: React.FC = () => {
           </p>
           <p>
             <strong className="font-bold text-[#38BDF8]">
-              Os +250 treinos ilustrados foram organizados justamente para ajudar você a visualizar e corrigir esses detalhes de maneira prática.
+              Os +150 treinos ilustrados foram organizados justamente para ajudar você a visualizar e corrigir esses detalhes de maneira prática.
             </strong>
           </p>
         </div>

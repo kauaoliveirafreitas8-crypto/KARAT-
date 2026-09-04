@@ -28,11 +28,11 @@ export const ASSETS = {
   whatsappIcon: '/assets/whatsapp-r9OtsIY3.webp',
   gmailIcon: '/assets/gmail-WKqhIC7A.webp',
   bookIcon: '/assets/book-icon-Bz8ujWQU.webp',
-  mainMockup: '/assets/hero-mockup.webp',
-  heroMockup: '/assets/hero-mockup.webp',
-  section4Mockup: '/assets/hero-mockup.webp',
-  basicPlanMockup: '/assets/hero-mockup.webp',
-  completePlanMockup: '/assets/hero-mockup.webp',
+  mainMockup: 'https://i.ibb.co/7dK3LMSP/img.webp',
+  heroMockup: 'https://i.ibb.co/7dK3LMSP/img.webp',
+  section4Mockup: 'https://i.ibb.co/7dK3LMSP/img.webp',
+  basicPlanMockup: 'https://i.ibb.co/7dK3LMSP/img.webp',
+  completePlanMockup: 'https://i.ibb.co/RkPjrfRd/00.webp',
   comparisonImage: '/assets/comparison-img.webp',
   bonus1: '/assets/bonus-1-opt.webp',
   bonus2: '/assets/bonus-2-opt.webp',
@@ -180,7 +180,7 @@ export const TARGET_AUDIENCE_ITEMS: TargetAudienceItem[] = [
 // Content of Material List (fg)
 export const CONTENT_MODULES_LIST: ContentModuleItem[] = [
   {
-    title: '+250 TREINOS ILUSTRADOS PASSO A PASSO',
+    title: '+150 TREINOS ILUSTRADOS PASSO A PASSO',
     desc: 'Sequências visuais para facilitar a compreensão e a prática dos movimentos.',
   },
   {
@@ -277,7 +277,7 @@ export const HOW_IT_WORKS_STEPS: StepItem[] = [
   {
     n: '03',
     icon: Download,
-    title: '03 — ABRA SEUS 250 TREINOS',
+    title: '03 — ABRA SEUS 150 TREINOS',
     desc: 'Acesse a coleção pelo celular, tablet ou computador e consulte quando precisar.',
   },
   {
@@ -292,7 +292,7 @@ export const HOW_IT_WORKS_STEPS: StepItem[] = [
 export const FAQ_ITEMS: FaqItem[] = [
   {
     q: 'O QUE ESTÁ INCLUSO NA COLEÇÃO?',
-    a: 'Você terá acesso a uma coleção digital com 250 treinos ilustrados passo a passo, incluindo bases, posturas, deslocamentos, golpes, defesas, chutes, equilíbrio, coordenação e sequências de prática.',
+    a: 'Você terá acesso a uma coleção digital com 150 treinos ilustrados passo a passo, incluindo bases, posturas, deslocamentos, golpes, defesas, chutes, equilíbrio, coordenação e sequências de prática.',
   },
   {
     q: 'COMO TEREI ACESSO AO MATERIAL?',

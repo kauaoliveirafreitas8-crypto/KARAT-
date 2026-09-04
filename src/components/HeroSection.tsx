@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 pt-8 sm:pt-10 lg:pt-24 pb-16 lg:pb-28">
           {/* Mobile Title */}
           <h1 className="lg:hidden relative z-10 text-center font-black text-[#0A192F] tracking-tight leading-[1.25] text-[23px] sm:text-3xl mb-4 sm:mb-6 px-1 max-w-lg mx-auto">
-            <span className="block">+250 Treinos Ilustrados</span>
+            <span className="block">+150 Treinos Ilustrados</span>
             <span className="block mt-1">Passo a Passo para Fortalecer a</span>
             <span className="block mt-1"><span className="text-[#0066CC]">Base no Karatê</span> de Forma Prática e Rápida</span>
           </h1>
@@ -45,7 +45,7 @@ export const HeroSection: React.FC = () => {
             <div className="relative z-10 order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
               {/* Desktop Title */}
               <h1 className="hidden lg:block font-black text-[#0A192F] tracking-tight leading-[1.2] lg:text-[40px] xl:text-[45px] w-full max-w-xl">
-                <span className="block whitespace-nowrap">+250 Treinos Ilustrados</span>
+                <span className="block whitespace-nowrap">+150 Treinos Ilustrados</span>
                 <span className="block mt-1">Passo a Passo para Fortalecer a</span>
                 <span className="block mt-1"><span className="text-[#0066CC]">Base no Karatê</span> de Forma Prática e Rápida</span>
               </h1>
@@ -110,11 +110,12 @@ export const HeroSection: React.FC = () => {
               <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-none flex items-center justify-center">
                 <img
                   src={ASSETS.heroMockup}
-                  alt="Mockup da coleção +250 Treinos Ilustrados de Karatê"
+                  alt="Mockup da coleção +150 Treinos Ilustrados de Karatê"
                   className="w-full h-auto object-contain drop-shadow-2xl transform-none lg:-translate-y-4"
                   loading="eager"
                   fetchPriority="high"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>

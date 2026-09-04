@@ -26,7 +26,7 @@ export const CalloutSection: React.FC = () => {
             Imagine abrir um treino, observar a posição inicial, acompanhar cada etapa do movimento e entender exatamente o que praticar em cada sequência.
             <br />
             <br />
-            É essa referência visual que os +250 treinos ilustrados foram organizados para proporcionar.
+            É essa referência visual que os +150 treinos ilustrados foram organizados para proporcionar.
           </p>
 
           <ul className="space-y-4 max-w-md mx-auto">

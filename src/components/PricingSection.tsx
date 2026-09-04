@@ -40,7 +40,7 @@ export const PricingSection: React.FC = () => {
   };
 
   const basicPlanFeatures = [
-    '+250 TREINOS ILUSTRADOS',
+    '+150 TREINOS ILUSTRADOS',
     'MOVIMENTOS PASSO A PASSO',
     'ACESSO IMEDIATO',
     'ACESSO VITALÍCIO',
@@ -93,7 +93,8 @@ export const PricingSection: React.FC = () => {
                 loading="lazy"
                 decoding="async"
                 src={ASSETS.basicPlanMockup}
-                alt="Coleção +100 Treinos Ilustrados de Karatê"
+                alt="Coleção +150 Treinos Ilustrados de Karatê - Plano Básico"
+                referrerPolicy="no-referrer"
                 className="w-full max-w-[260px] h-auto object-contain"
               />
             </div>
@@ -108,22 +109,13 @@ export const PricingSection: React.FC = () => {
             </ul>
 
             <p className="mt-6 text-rose-500 line-through text-base">
-              de R$54,90 por:
+              de R$47,90 por:
             </p>
             <div className="mt-1 leading-none">
               <span className="text-6xl md:text-7xl font-black text-[#0066CC] tracking-tight">
-                R$17,90
+                R$10,00
               </span>
             </div>
-            <p className="mt-3 font-bold text-[#0A192F] text-base sm:text-lg">
-              ou 3x de R$6,39 no cartão
-            </p>
-            <p className="mt-2 text-[#0A192F] text-sm sm:text-base flex items-center justify-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#16A34A]" />
-              <span>
-                Você economiza <strong>R$37,00</strong>
-              </span>
-            </p>
 
             <a
               id="basic-plan-cta"
@@ -157,6 +149,7 @@ export const PricingSection: React.FC = () => {
                 decoding="async"
                 src={ASSETS.completePlanMockup}
                 alt="Coleção +250 Treinos Ilustrados de Karatê - Plano Completo com 4 Bônus"
+                referrerPolicy="no-referrer"
                 className="w-full max-w-[280px] h-auto object-contain"
               />
             </div>

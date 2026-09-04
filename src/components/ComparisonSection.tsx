@@ -114,7 +114,7 @@ export const ComparisonSection: React.FC = () => {
               onClick={scrollToPricing}
               className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 sm:px-14 py-5 sm:py-6 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wider text-base sm:text-lg md:text-xl shadow-[0_8px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_5px_0_0_#004F9F] hover:bg-[#0055B3] active:translate-y-[4px] active:shadow-[0_2px_0_0_#004F9F] transition-all cursor-pointer animate-cta-pulse"
             >
-              <span>QUERO ACESSAR OS +250 TREINOS</span>
+              <span>QUERO ACESSAR OS +150 TREINOS</span>
               <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 shrink-0" strokeWidth={3} />
             </a>
           </div>
