@@ -32,10 +32,10 @@ export const HeroSection: React.FC = () => {
 
       {/* Main Hero Section */}
       <section id="hero-section" className="relative overflow-hidden bg-[#FFFFFF]">
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-12 pt-10 lg:pt-24 pb-16 lg:pb-28">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 pt-8 sm:pt-10 lg:pt-24 pb-16 lg:pb-28">
           {/* Mobile Title */}
-          <h1 className="lg:hidden relative z-10 text-center font-black text-[#0A192F] tracking-tight leading-[1.2] text-[25px] sm:text-3xl mb-8 px-1 max-w-lg mx-auto">
-            <span className="block whitespace-nowrap">+250 Treinos Ilustrados</span>
+          <h1 className="lg:hidden relative z-10 text-center font-black text-[#0A192F] tracking-tight leading-[1.25] text-[23px] sm:text-3xl mb-4 sm:mb-6 px-1 max-w-lg mx-auto">
+            <span className="block">+250 Treinos Ilustrados</span>
             <span className="block mt-1">Passo a Passo para Fortalecer a</span>
             <span className="block mt-1"><span className="text-[#0066CC]">Base no Karatê</span> de Forma Prática e Rápida</span>
           </h1>
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
               </h1>
 
               {/* Subheadline Description */}
-              <p className="mt-6 lg:mt-8 max-w-lg lg:max-w-xl mx-auto lg:mx-0 text-[16px] sm:text-[18px] leading-[1.6] text-[#334155] text-center lg:text-left [text-wrap:balance]">
+              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-lg lg:max-w-xl mx-auto lg:mx-0 text-[16px] sm:text-[18px] leading-[1.6] text-[#334155] text-center lg:text-left [text-wrap:balance]">
                 Desenvolva os principais fundamentos do Karatê através de{' '}
                 <span className="text-[#0066CC] font-bold">
                   movimentos ilustrados, sequências visuais passo a passo
@@ -99,14 +99,16 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Right Column: Hero Mockup */}
-            <div className="relative mt-8 lg:mt-0 order-1 lg:order-2 h-[300px] sm:h-[540px] lg:h-[600px] flex items-center justify-center">
-              <img
-                src={ASSETS.heroMockup}
-                alt="Mockup da coleção +250 Treinos Ilustrados de Karatê"
-                className="relative w-full max-w-none h-auto object-contain -translate-y-6 lg:-translate-y-12 drop-shadow-2xl"
-                fetchPriority="high"
-                decoding="async"
-              />
+            <div className="relative w-full order-1 lg:order-2 flex items-center justify-center my-2 sm:my-4 lg:my-0">
+              <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-none flex items-center justify-center">
+                <img
+                  src={ASSETS.heroMockup}
+                  alt="Mockup da coleção +250 Treinos Ilustrados de Karatê"
+                  className="w-full h-auto object-contain drop-shadow-2xl transform-none lg:-translate-y-4"
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
         </div>
