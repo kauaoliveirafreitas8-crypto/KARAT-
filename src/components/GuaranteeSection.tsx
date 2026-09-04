@@ -12,6 +12,8 @@ export const GuaranteeSection: React.FC = () => {
             decoding="async"
             src={ASSETS.guaranteeBadge}
             alt="Selo de garantia de 7 dias"
+            width={208}
+            height={208}
             className="flex-shrink-0 w-44 h-44 md:w-52 md:h-52 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
           />
 

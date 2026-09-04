@@ -33,6 +33,8 @@ export const ContentSection: React.FC = () => {
               decoding="async"
               src={ASSETS.section4Mockup}
               alt="Kit +150 Treinos Ilustrados de Karatê"
+              width={500}
+              height={500}
               referrerPolicy="no-referrer"
               className="relative w-full max-w-2xl h-auto object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.15)]"
             />

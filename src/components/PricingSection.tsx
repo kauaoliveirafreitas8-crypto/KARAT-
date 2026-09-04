@@ -94,6 +94,8 @@ export const PricingSection: React.FC = () => {
                 decoding="async"
                 src={ASSETS.basicPlanMockup}
                 alt="Coleção +150 Treinos Ilustrados de Karatê - Plano Básico"
+                width={500}
+                height={500}
                 referrerPolicy="no-referrer"
                 className="w-full max-w-[260px] h-auto object-contain"
               />
@@ -149,6 +151,8 @@ export const PricingSection: React.FC = () => {
                 decoding="async"
                 src={ASSETS.completePlanMockup}
                 alt="Coleção +250 Treinos Ilustrados de Karatê - Plano Completo com 4 Bônus"
+                width={500}
+                height={500}
                 referrerPolicy="no-referrer"
                 className="w-full max-w-[280px] h-auto object-contain"
               />

@@ -111,6 +111,8 @@ export const HeroSection: React.FC = () => {
                 <img
                   src={ASSETS.heroMockup}
                   alt="Mockup da coleção +150 Treinos Ilustrados de Karatê"
+                  width={500}
+                  height={500}
                   className="w-full h-auto object-contain drop-shadow-2xl transform-none lg:-translate-y-4"
                   loading="eager"
                   fetchPriority="high"

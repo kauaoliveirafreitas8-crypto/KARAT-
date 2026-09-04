@@ -40,19 +40,29 @@ export default function App() {
       <PricingSection />
 
       {/* 9. Garantia Incondicional de 7 Dias */}
-      <GuaranteeSection />
+      <div className="content-auto">
+        <GuaranteeSection />
+      </div>
 
       {/* 10. Depoimentos (Quem já utilizou, aprovou) */}
-      <TestimonialsSection />
+      <div className="content-auto">
+        <TestimonialsSection />
+      </div>
 
       {/* 11. Comece a treinar em poucos minutos (Passo a passo) */}
-      <HowItWorksSection />
+      <div className="content-auto">
+        <HowItWorksSection />
+      </div>
 
       {/* 12. Perguntas Frequentes (FAQ) */}
-      <FaqSection />
+      <div className="content-auto">
+        <FaqSection />
+      </div>
 
       {/* 13. Rodapé */}
-      <FooterSection />
+      <div className="content-auto">
+        <FooterSection />
+      </div>
     </main>
   );
 }

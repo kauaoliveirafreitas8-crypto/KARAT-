@@ -17,6 +17,8 @@ export const SecondaryMarqueeSection: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.alt}
+                width={480}
+                height={679}
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"

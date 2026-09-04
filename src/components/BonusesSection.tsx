@@ -36,6 +36,8 @@ export const BonusesSection: React.FC = () => {
                   decoding="async"
                   src={bonus.image}
                   alt={`Capa do bônus ${bonus.n} — ${bonus.title}`}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]"
                 />
               </div>
