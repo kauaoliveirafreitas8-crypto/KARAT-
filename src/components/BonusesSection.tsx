@@ -32,7 +32,7 @@ export const BonusesSection: React.FC = () => {
               {/* Bonus image container */}
               <div className="aspect-square bg-[#F8FAFC] flex items-center justify-center p-4 overflow-hidden">
                 <img
-                  loading="eager"
+                  loading="lazy"
                   decoding="async"
                   src={bonus.image}
                   alt={`Capa do bônus ${bonus.n} — ${bonus.title}`}

@@ -112,6 +112,7 @@ export const HeroSection: React.FC = () => {
                   src={ASSETS.heroMockup}
                   alt="Mockup da coleção +250 Treinos Ilustrados de Karatê"
                   className="w-full h-auto object-contain drop-shadow-2xl transform-none lg:-translate-y-4"
+                  loading="eager"
                   fetchPriority="high"
                   decoding="async"
                 />

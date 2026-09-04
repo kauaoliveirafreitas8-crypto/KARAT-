@@ -28,12 +28,12 @@ export const ASSETS = {
   whatsappIcon: '/assets/whatsapp-r9OtsIY3.webp',
   gmailIcon: '/assets/gmail-WKqhIC7A.webp',
   bookIcon: '/assets/book-icon-Bz8ujWQU.webp',
-  mainMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
-  heroMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
-  section4Mockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
-  basicPlanMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
-  completePlanMockup: 'https://i.ibb.co/hxk1Dz6b/00.webp',
-  comparisonImage: 'https://i.ibb.co/YBBMHSSs/IMG1.webp',
+  mainMockup: '/assets/hero-mockup.webp',
+  heroMockup: '/assets/hero-mockup.webp',
+  section4Mockup: '/assets/hero-mockup.webp',
+  basicPlanMockup: '/assets/hero-mockup.webp',
+  completePlanMockup: '/assets/hero-mockup.webp',
+  comparisonImage: '/assets/comparison-img.webp',
   bonus1: '/assets/bonus-1-opt.webp',
   bonus2: '/assets/bonus-2-opt.webp',
   bonus3: '/assets/bonus-3-opt.webp',
@@ -48,30 +48,30 @@ export const CHECKOUT_LINKS = {
   completePlan: 'https://pay.kiwify.com.br/i32sxoH',
 };
 
-// Marquee Carousel Images (em ordem aleatória com as novas imagens)
+// Marquee Carousel Images (em ordem aleatória com as novas imagens locais)
 export const MARQUEE_ITEMS: MarqueeItem[] = [
-  { image: 'https://i.ibb.co/1YrWKJ0L/27OK.webp', alt: 'Treino ilustrado 27' },
-  { image: 'https://i.ibb.co/D3hBg05/16OK.webp', alt: 'Treino ilustrado 16' },
-  { image: 'https://i.ibb.co/LXs5csfS/21OK.webp', alt: 'Treino ilustrado 21' },
-  { image: 'https://i.ibb.co/xtMyKXTJ/30OK.webp', alt: 'Treino ilustrado 30' },
-  { image: 'https://i.ibb.co/N66z8f4s/15OK.webp', alt: 'Treino ilustrado 15' },
-  { image: 'https://i.ibb.co/FbS642Ty/28OK.webp', alt: 'Treino ilustrado 28' },
-  { image: 'https://i.ibb.co/S4yDL2tt/18OK.webp', alt: 'Treino ilustrado 18' },
-  { image: 'https://i.ibb.co/Td1tFf3/23OK.webp', alt: 'Treino ilustrado 23' },
-  { image: 'https://i.ibb.co/JRK3gC7V/17OK.webp', alt: 'Treino ilustrado 17' },
+  { image: '/assets/m-27.webp', alt: 'Treino ilustrado 27' },
+  { image: '/assets/m-16.webp', alt: 'Treino ilustrado 16' },
+  { image: '/assets/m-21.webp', alt: 'Treino ilustrado 21' },
+  { image: '/assets/m-30.webp', alt: 'Treino ilustrado 30' },
+  { image: '/assets/m-15.webp', alt: 'Treino ilustrado 15' },
+  { image: '/assets/m-28.webp', alt: 'Treino ilustrado 28' },
+  { image: '/assets/m-18.webp', alt: 'Treino ilustrado 18' },
+  { image: '/assets/m-23.webp', alt: 'Treino ilustrado 23' },
+  { image: '/assets/m-17.webp', alt: 'Treino ilustrado 17' },
 ];
 
 // Segundo Carrossel (Abaixo de 'Para quem é este material?' - Ordem Aleatória)
 export const SECONDARY_MARQUEE_ITEMS: MarqueeItem[] = [
-  { image: 'https://i.ibb.co/FbS642Ty/28OK.webp', alt: 'Treino ilustrado 28' },
-  { image: 'https://i.ibb.co/S4yDL2tt/18OK.webp', alt: 'Treino ilustrado 18' },
-  { image: 'https://i.ibb.co/Td1tFf3/23OK.webp', alt: 'Treino ilustrado 23' },
-  { image: 'https://i.ibb.co/N66z8f4s/15OK.webp', alt: 'Treino ilustrado 15' },
-  { image: 'https://i.ibb.co/1YrWKJ0L/27OK.webp', alt: 'Treino ilustrado 27' },
-  { image: 'https://i.ibb.co/JRK3gC7V/17OK.webp', alt: 'Treino ilustrado 17' },
-  { image: 'https://i.ibb.co/LXs5csfS/21OK.webp', alt: 'Treino ilustrado 21' },
-  { image: 'https://i.ibb.co/D3hBg05/16OK.webp', alt: 'Treino ilustrado 16' },
-  { image: 'https://i.ibb.co/xtMyKXTJ/30OK.webp', alt: 'Treino ilustrado 30' },
+  { image: '/assets/m-28.webp', alt: 'Treino ilustrado 28' },
+  { image: '/assets/m-18.webp', alt: 'Treino ilustrado 18' },
+  { image: '/assets/m-23.webp', alt: 'Treino ilustrado 23' },
+  { image: '/assets/m-15.webp', alt: 'Treino ilustrado 15' },
+  { image: '/assets/m-27.webp', alt: 'Treino ilustrado 27' },
+  { image: '/assets/m-17.webp', alt: 'Treino ilustrado 17' },
+  { image: '/assets/m-21.webp', alt: 'Treino ilustrado 21' },
+  { image: '/assets/m-16.webp', alt: 'Treino ilustrado 16' },
+  { image: '/assets/m-30.webp', alt: 'Treino ilustrado 30' },
 ];
 
 // Benefits Section (P1)

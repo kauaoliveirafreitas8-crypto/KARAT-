@@ -8,7 +8,7 @@ export const GuaranteeSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <img
-            loading="eager"
+            loading="lazy"
             decoding="async"
             src={ASSETS.guaranteeBadge}
             alt="Selo de garantia de 7 dias"
