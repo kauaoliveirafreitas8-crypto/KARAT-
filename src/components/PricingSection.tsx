@@ -5,6 +5,40 @@ import { ASSETS, CHECKOUT_LINKS } from '../data/salesPageData';
 export const PricingSection: React.FC = () => {
   const currentDate = new Date().toLocaleDateString('pt-BR');
 
+  // Garante que parâmetros de rastreamento (UTMs, src, fbclid) sejam repassados na URL do checkout Kiwify
+  const getUrlWithTracking = (baseUrl: string) => {
+    if (typeof window === 'undefined') return baseUrl;
+    try {
+      const currentParams = new URLSearchParams(window.location.search);
+      if (!currentParams.toString()) return baseUrl;
+      const url = new URL(baseUrl);
+      currentParams.forEach((val, key) => {
+        if (!url.searchParams.has(key)) {
+          url.searchParams.set(key, val);
+        }
+      });
+      return url.toString();
+    } catch {
+      return baseUrl;
+    }
+  };
+
+  const handleCheckoutClick = () => {
+    try {
+      const win = window as any;
+      // Disparo direto nativo LowTrack (se disponível no objeto window)
+      if (win.LowTrack && typeof win.LowTrack.trackIC === 'function') {
+        win.LowTrack.trackIC();
+      }
+      // Disparo Meta Pixel (se inicializado pelo LowTrack)
+      if (typeof win.fbq === 'function') {
+        win.fbq('track', 'InitiateCheckout');
+      }
+    } catch (e) {
+      console.warn('Tracking dispatch warning:', e);
+    }
+  };
+
   const basicPlanFeatures = [
     '+250 TREINOS ILUSTRADOS',
     'MOVIMENTOS PASSO A PASSO',
@@ -93,7 +127,11 @@ export const PricingSection: React.FC = () => {
 
             <a
               id="basic-plan-cta"
-              href={CHECKOUT_LINKS.basicPlan}
+              href={getUrlWithTracking(CHECKOUT_LINKS.basicPlan)}
+              data-href={getUrlWithTracking(CHECKOUT_LINKS.basicPlan)}
+              data-url={getUrlWithTracking(CHECKOUT_LINKS.basicPlan)}
+              data-checkout-url={getUrlWithTracking(CHECKOUT_LINKS.basicPlan)}
+              onClick={handleCheckoutClick}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wide shadow-[0_6px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_#004F9F] hover:bg-[#0055B3] transition-all cursor-pointer"
@@ -158,7 +196,11 @@ export const PricingSection: React.FC = () => {
 
             <a
               id="complete-plan-cta"
-              href={CHECKOUT_LINKS.completePlan}
+              href={getUrlWithTracking(CHECKOUT_LINKS.completePlan)}
+              data-href={getUrlWithTracking(CHECKOUT_LINKS.completePlan)}
+              data-url={getUrlWithTracking(CHECKOUT_LINKS.completePlan)}
+              data-checkout-url={getUrlWithTracking(CHECKOUT_LINKS.completePlan)}
+              onClick={handleCheckoutClick}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0066CC] text-white font-black uppercase tracking-wide shadow-[0_6px_0_0_#004F9F] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_#004F9F] hover:bg-[#0055B3] transition-all cursor-pointer animate-cta-pulse"
