@@ -23,6 +23,22 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
     </noscript>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1425844082767731');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- LowTrack Pixel Code -->
     <script>
       window.pixelId = "lt_px_f82dff9a8f82";
       var a = document.createElement("script");
@@ -31,8 +47,66 @@
       a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
       document.head.appendChild(a);
     </script>
+    <!-- End LowTrack Pixel Code -->
+
+    <!-- Repassador Global de UTMs e Disparo de IC Kiwify -->
+    <script>
+      (function() {
+        function attachTrackingToLinks() {
+          try {
+            var params = new URLSearchParams(window.location.search);
+            var links = document.querySelectorAll('a[href*="pay.kiwify.com.br"]');
+            links.forEach(function(link) {
+              var href = link.getAttribute('href');
+              if (!href) return;
+              try {
+                var url = new URL(href, window.location.href);
+                // Define parâmetros padrão caso não existam
+                if (!url.searchParams.has('src')) {
+                  var isComplete = href.indexOf('i32sxoH') !== -1;
+                  url.searchParams.set('src', isComplete ? 'plano_completo' : 'plano_basico');
+                }
+                if (!url.searchParams.has('sck')) {
+                  var isComplete = href.indexOf('i32sxoH') !== -1;
+                  url.searchParams.set('sck', isComplete ? 'plano_completo' : 'plano_basico');
+                }
+                // Anexa parâmetros da URL da página
+                params.forEach(function(val, key) {
+                  if (!url.searchParams.has(key)) {
+                    url.searchParams.set(key, val);
+                  }
+                });
+                var newHref = url.toString();
+                if (link.getAttribute('href') !== newHref) {
+                  link.setAttribute('href', newHref);
+                  link.setAttribute('data-href', newHref);
+                  link.setAttribute('data-url', newHref);
+                  link.setAttribute('data-checkout-url', newHref);
+                }
+              } catch(e) {}
+            });
+          } catch(e) {}
+        }
+
+        // Executa ao carregar e escuta interações de hover/toque
+        document.addEventListener('DOMContentLoaded', attachTrackingToLinks);
+        window.addEventListener('load', attachTrackingToLinks);
+        document.addEventListener('mouseover', function(e) {
+          var target = e.target && e.target.closest ? e.target.closest('a[href*="pay.kiwify.com.br"]') : null;
+          if (target) attachTrackingToLinks();
+        }, true);
+        document.addEventListener('touchstart', function(e) {
+          var target = e.target && e.target.closest ? e.target.closest('a[href*="pay.kiwify.com.br"]') : null;
+          if (target) attachTrackingToLinks();
+        }, { passive: true, capture: true });
+      })();
+    </script>
   </head>
   <body class="font-sans antialiased text-[#0A192F] bg-[#081426] selection:bg-[#0066CC] selection:text-white">
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1425844082767731&ev=PageView&noscript=1" alt="" />
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

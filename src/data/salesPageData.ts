@@ -42,10 +42,10 @@ export const ASSETS = {
   paymentIcons: '/assets/payment-icons.webp',
 };
 
-// Checkout Links
+// Checkout Links com parâmetros de rastreamento integrados (Kiwify e tráfego)
 export const CHECKOUT_LINKS = {
-  basicPlan: 'https://pay.kiwify.com.br/TcnGXRt',
-  completePlan: 'https://pay.kiwify.com.br/i32sxoH',
+  basicPlan: 'https://pay.kiwify.com.br/TcnGXRt?src=plano_basico&sck=plano_basico',
+  completePlan: 'https://pay.kiwify.com.br/i32sxoH?src=plano_completo&sck=plano_completo',
 };
 
 // Marquee Carousel Images (em ordem aleatória com as novas imagens locais)
